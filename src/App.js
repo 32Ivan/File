@@ -8,7 +8,6 @@ import ModalId from './ModelId';
 
 
 
-
 function App() {
   return (
     <div className="App">
