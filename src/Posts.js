@@ -11,7 +11,6 @@ function Posts() {
   const mapItem = [];
 
   useEffect(() => {
-      // let kuca = [];
       axios
       .get("https://jsonplaceholder.typicode.com/users")
       .then((e) => {
@@ -27,14 +26,12 @@ function Posts() {
         axios
         .get("https://jsonplaceholder.typicode.com/posts")
         .then((rest) => {
-            //   console.log(rest.data);
             setPosts(rest.data);
         })
       .catch((err) => {
           console.log(err);
         });
         
-        // console.log(kuca)
     }, []);
     
     function pokusaj() {
@@ -42,7 +39,6 @@ function Posts() {
             postsId.forEach((item) => {
                 if (item.id === items.userId) {
                     mapItem.push(item, items);
-                    //   console.log(item.name)
                 }
             });
         });

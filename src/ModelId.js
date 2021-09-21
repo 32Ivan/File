@@ -12,7 +12,6 @@ function ModalId(props) {
       .then((e) => {
         console.log(e.data);
         setID(e.data);
-        // setPostsId(e.data);
         for (const dataObjt of e.data) {
           console.log("Hello from", dataObjt.name);
         }
