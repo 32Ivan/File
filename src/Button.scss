@@ -1,0 +1,48 @@
+$phone: 321px;
+$kindle: 481px;
+$ipad: 641px;
+$tablet: 961px;
+$laptops: 1025px;
+$desktops: 1281px;
+
+.button {
+    width: 100%;
+    font: inherit;
+    padding: 0.3rem 1.5rem;
+    border: 1px solid #00ff80;
+    border-radius: 15px;
+    color: white;
+    background: #14835e;
+    box-shadow: 0 0 4px rgb(164, 252, 0);
+    cursor: pointer;
+    // margin: 10px;
+    
+    font-size: 17px;
+    @media screen and (max-width: $ipad) and (min-width: $kindle) {
+      font-size: 15px;
+    }
+    @media screen and (max-width: $kindle) and (min-width: $phone) {
+      font-size: 13px;
+    }
+    @media screen and (max-width: $phone) {
+      font-size: 11px;
+    }
+    
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:hover,
+  .button:active {
+    background: #156950;
+    border-color: #ff00aa;
+    box-shadow: 0 0 8px rgb(255, 238, 0);
+  }
+  
+  @media (min-width: 768px) {
+    .button{
+    width: auto;
+  }
+  }
