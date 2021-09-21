@@ -7,7 +7,6 @@ function ModalId(props) {
   const [Id, setID] = useState([]);
 
   useEffect(() => {
-    // let kuca = [];
     axios
       .get("https://jsonplaceholder.typicode.com/users")
       .then((e) => {
